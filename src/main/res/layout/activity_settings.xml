@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings">
+
+
+    <ImageView
+        android:id="@+id/rect"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorBlue"
+        android:contentDescription="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/back_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintBottom_toBottomOf="@+id/title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/title"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/roboto_light"
+        android:text="@string/settings"
+        android:textColor="@color/colorWhite"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/pp_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/privacy_policy"
+        android:background="@android:color/transparent"
+        android:textAlignment="textStart"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/rect"
+        style="?android:attr/borderlessButtonStyle"
+        android:fontFamily="@font/roboto_light"
+        android:textColor="@color/colorBlack"
+        android:textAllCaps="false"
+        android:drawableRight="@drawable/ic_arrow_right"/>
+
+    <Button
+        android:id="@+id/tos_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/terms_of_service"
+        android:background="@android:color/transparent"
+        android:textAlignment="textStart"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/pp_button"
+        style="?android:attr/borderlessButtonStyle"
+        android:fontFamily="@font/roboto_light"
+        android:textColor="@color/colorBlack"
+        android:textAllCaps="false"
+        android:drawableRight="@drawable/ic_arrow_right"/>
+
+    <Button
+        android:id="@+id/ns_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/notifications_settings"
+        android:background="@android:color/transparent"
+        android:textAlignment="textStart"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/tos_button"
+        style="?android:attr/borderlessButtonStyle"
+        android:fontFamily="@font/roboto_light"
+        android:textColor="@color/colorBlack"
+        android:textAllCaps="false"
+        android:drawableRight="@drawable/ic_arrow_right"/>
+
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/logout"
+        android:background="@drawable/oval_button_submit_blue"
+        android:textAlignment="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="?android:attr/borderlessButtonStyle"
+        android:fontFamily="@font/roboto_light"
+        android:textColor="@color/colorWhite"
+        android:textAllCaps="false" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

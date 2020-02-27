@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">Mazda Service</string>
+
+    <!-- Main Menu -->
+    <string name="main_menu">Главное меню</string>
+    <string name="repair">Запись на\nремонт</string>
+    <string name="call">Связаться с\nавтосервисом</string>
+    <string name="history">История</string>
+    <string name="shop">Магазин\nзапчастей</string>
+    <string name="settings">Настройки</string>
+    <string name="about">О нас</string>
+    <string name="offers">Новости и акции</string>
+    <string name="look">Просмотреть</string>
+
+    <!-- Repair Activity -->
+    <string name="repair_title">Запись на ремонт</string>
+    <string name="topic">Тема</string>
+    <string name="model">Модель автомобиля</string>
+    <string name="comment">Комментарии</string>
+    <string name="date">Дата</string>
+    <string name="times">Время</string>
+
+    <!-- Call Activity -->
+    <string name="call_title">Свяжитесь с нами</string>
+    <string name="description">Оставьте Ваше сообщение в этой форме, мы получим его на e-mail и обязательно Вам ответим!</string>
+    <string name="topic_hint">Тема сообщения</string>
+    <string name="text_hint">Текст сообщения</string>
+    <string name="send">Отправить</string>
+
+    <!-- News Activity -->
+    <string name="news_title">Новости и акции</string>
+
+    <!-- History Activity -->
+    <string name="history_title">История</string>
+
+    <!-- History_Item Activity -->
+    <string name="type_text">Тип</string>
+    <string name="topic_text">Тема</string>
+    <string name="date_text">01.01.2019</string>
+    <string name="status_text">Статус</string>
+
+    <!-- About Activity -->
+    <string name="company_name">Mazda\nService</string>
+    <string name="contacts_text">Контакты:</string>
+    <string name="mobile_text">+7 (343) 207 50 90</string>
+    <string name="email_text">info@mazda-service.pro</string>
+    <string name="address_text">г. Екатеринбург, Выездной переулок, 11А</string>
+    <string name="time_text">Пн-Вс: с 9.00 до 21.00</string>
+    <string name="rate_text">Оцените наше приложение</string>
+
+    <!-- Profile Activity -->
+    <string name="profile_title">Профиль</string>
+    <string name="name_hint">Имя</string>
+    <string name="name_text"></string>
+    <string name="mobile_hint">Мобильный номер</string>
+    <string name="mobile_number_text"></string>
+    <string name="email_hint">E-mail</string>
+    <string name="email"></string>
+    <string name="password_hint">Пароль</string>
+    <string name="password_text"></string>
+    <string name="score_hint">Баллы</string>
+    <string name="score_text"></string>
+    <string name="save_text">Сохранить</string>
+
+    <!-- Settings Activity -->
+    <string name="privacy_policy">Политика конфиденциальности</string>
+    <string name="terms_of_service">Пользовательское соглашение</string>
+    <string name="notifications_settings">Настройка уведомлений</string>
+    <string name="logout">Выйти из аккаунта</string>
+
+    <!-- LogIn Activity -->
+    <string name="login">Войти</string>
+    <string name="register">Регистрация</string>
+
+    <!-- Welcome Activity -->
+    <string name="welcome_text">Приветствуем Вас!</string>
+    <string name="forget_pas">Забыли пароль?</string>
+
+    <!-- Register Activity -->
+    <string name="password_repeat">Подтверждение пароля</string>
+    <string name="continue_text">Продолжить</string>
+
+    <!-- Referral Activity -->
+    <string name="referral_text">Если Ваш друг или знакомый зарегистрирован в нашем приложении, Вы можете ввести его email</string>
+    <string name="enter_code">Введите email</string>
+    <string name="confirm">Подтвердить</string>
+    <string name="skip">Пропустить этот шаг</string>
+</resources>

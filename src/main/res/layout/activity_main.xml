@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_menu"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/main_menu_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/main_menu"
+        android:textColor="#FF000000"
+        android:textSize="28sp"
+        app:fontFamily="@font/roboto_light"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/profile_button"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/round_button_profile_blue"
+        app:layout_constraintBottom_toBottomOf="@+id/main_menu_text"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/main_menu_text" />
+
+    <ImageView
+        android:id="@+id/user_logo"
+        android:src="@mipmap/user"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:contentDescription="@null"
+        android:tint="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="@id/profile_button"
+        app:layout_constraintLeft_toLeftOf="@id/profile_button"
+        app:layout_constraintRight_toRightOf="@id/profile_button"
+        app:layout_constraintTop_toTopOf="@id/profile_button" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/main_menu_text"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- 1 Row -->
+
+            <!-- Repair -->
+            <Button
+                android:id="@+id/repair_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_button_menu_blue"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/call_button"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="15dp"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/schedule"
+                app:layout_constraintStart_toStartOf="@id/repair_button"
+                app:layout_constraintTop_toTopOf="@id/repair_button"
+                android:tint="@color/colorWhite"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:contentDescription="@null"
+                android:elevation="4dp"
+                android:outlineProvider="none"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/repair"
+                app:layout_constraintStart_toStartOf="@id/repair_button"
+                app:layout_constraintEnd_toEndOf="@id/repair_button"
+                app:layout_constraintBottom_toBottomOf="@id/repair_button"
+                android:fontFamily="@font/roboto_light"
+                android:textSize="21sp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="15dp"
+                android:elevation="4dp"
+                android:outlineProvider="none"/>
+
+            <!-- Call -->
+            <Button
+                android:id="@+id/call_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_button_menu_blue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/repair_button"
+                app:layout_constraintHorizontal_bias="0.5"
+                android:layout_marginRight="15dp"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/videochat"
+                app:layout_constraintStart_toStartOf="@id/call_button"
+                app:layout_constraintTop_toTopOf="@id/call_button"
+                android:tint="@color/colorWhite"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:contentDescription="@null"
+                android:elevation="4dp"
+                android:outlineProvider="none"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/call"
+                app:layout_constraintStart_toStartOf="@id/call_button"
+                app:layout_constraintEnd_toEndOf="@id/call_button"
+                app:layout_constraintBottom_toBottomOf="@id/call_button"
+                android:fontFamily="@font/roboto_light"
+                android:textSize="21sp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="15dp"
+                android:elevation="4dp"
+                android:outlineProvider="none"/>
+
+            <!-- 2 Row -->
+
+            <!-- History -->
+            <Button
+                android:id="@+id/history_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_button_menu_blue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/shop_button"
+                app:layout_constraintTop_toBottomOf="@id/repair_button"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="15dp"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/history"
+                app:layout_constraintStart_toStartOf="@id/history_button"
+                app:layout_constraintTop_toTopOf="@id/history_button"
+                android:tint="@color/colorWhite"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:contentDescription="@null"
+                android:elevation="4dp"
+                android:outlineProvider="none"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/history"
+                app:layout_constraintStart_toStartOf="@id/history_button"
+                app:layout_constraintEnd_toEndOf="@id/history_button"
+                app:layout_constraintBottom_toBottomOf="@id/history_button"
+                android:fontFamily="@font/roboto_light"
+                android:textSize="21sp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="15dp"
+                android:elevation="4dp"
+                android:outlineProvider="none"/>
+
+
+            <!-- Shop -->
+            <Button
+                android:id="@+id/shop_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_button_menu_blue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/history_button"
+                app:layout_constraintTop_toBottomOf="@id/repair_button"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/shop"
+                app:layout_constraintStart_toStartOf="@id/shop_button"
+                app:layout_constraintTop_toTopOf="@id/shop_button"
+                android:tint="@color/colorWhite"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:contentDescription="@null"
+                android:elevation="4dp"
+                android:outlineProvider="none"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/shop"
+                app:layout_constraintStart_toStartOf="@id/shop_button"
+                app:layout_constraintEnd_toEndOf="@id/shop_button"
+                app:layout_constraintBottom_toBottomOf="@id/shop_button"
+                android:fontFamily="@font/roboto_light"
+                android:textSize="21sp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="15dp"
+                android:elevation="4dp"
+                android:outlineProvider="none"/>
+
+            <!-- 3 Row -->
+            <Button
+                android:id="@+id/offers_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_button_menu_blue"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/history_button"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/offers"
+                app:layout_constraintStart_toStartOf="@id/offers_button"
+                app:layout_constraintTop_toTopOf="@id/offers_button"
+                app:layout_constraintEnd_toEndOf="@id/offers_button"
+                android:fontFamily="@font/roboto_light"
+                android:textSize="21sp"
+                android:textAlignment="center"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="30dp"
+                android:elevation="4dp"
+                android:outlineProvider="none"/>
+
+            <Button
+                android:id="@+id/offers_button_white"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:background="@drawable/oval_button_white"
+                android:backgroundTint="@color/colorWhite"
+                app:layout_constraintStart_toStartOf="@id/offers_button"
+                app:layout_constraintEnd_toEndOf="@id/offers_button"
+                app:layout_constraintBottom_toBottomOf="@id/offers_button"
+                android:layout_marginBottom="25dp"
+                android:elevation="4dp"
+                android:outlineProvider="none"
+                android:text="@string/look"
+                android:textColor="@color/colorBlack"
+                android:fontFamily="@font/roboto_light"
+                android:textSize="17sp"
+                android:textAllCaps="false"/>
+
+            <!-- 4 Row -->
+
+            <!-- Settings -->
+            <Button
+                android:id="@+id/settings_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_button_menu_blue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/about_button"
+                app:layout_constraintTop_toBottomOf="@id/offers_button"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="15dp"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/settings"
+                app:layout_constraintStart_toStartOf="@id/settings_button"
+                app:layout_constraintTop_toTopOf="@id/settings_button"
+                android:tint="@color/colorWhite"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:contentDescription="@null"
+                android:elevation="4dp"
+                android:outlineProvider="none"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/settings"
+                app:layout_constraintStart_toStartOf="@id/settings_button"
+                app:layout_constraintEnd_toEndOf="@id/settings_button"
+                app:layout_constraintBottom_toBottomOf="@id/settings_button"
+                android:fontFamily="@font/roboto_light"
+                android:textSize="21sp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="15dp"
+                android:elevation="4dp"
+                android:outlineProvider="none"/>
+
+            <!-- About us -->
+            <Button
+                android:id="@+id/about_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_button_menu_blue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/settings_button"
+                app:layout_constraintTop_toBottomOf="@id/offers_button"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/about"
+                app:layout_constraintStart_toStartOf="@id/about_button"
+                app:layout_constraintTop_toTopOf="@id/about_button"
+                android:tint="@color/colorWhite"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:contentDescription="@null"
+                android:elevation="4dp"
+                android:outlineProvider="none"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/about"
+                app:layout_constraintStart_toStartOf="@id/about_button"
+                app:layout_constraintEnd_toEndOf="@id/about_button"
+                app:layout_constraintBottom_toBottomOf="@id/about_button"
+                android:fontFamily="@font/roboto_light"
+                android:textSize="21sp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="15dp"
+                android:elevation="4dp"
+                android:outlineProvider="none"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
