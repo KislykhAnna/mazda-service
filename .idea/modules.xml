@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../Mazda Service.iml" filepath="$PROJECT_DIR$/../Mazda Service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app.iml" filepath="$PROJECT_DIR$/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Mazda Service.iml" filepath="$PROJECT_DIR$/../Mazda Service.iml" group="Mazda Service" />
+      <module fileurl="file://$PROJECT_DIR$/app.iml" filepath="$PROJECT_DIR$/app.iml" group="Mazda Service/app" />
     </modules>
   </component>
 </project>
