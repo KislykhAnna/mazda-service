@@ -1,4 +1,4 @@
-# mazda-service
+# Mazda Service App
 
 Android application for Mazda Service
 
